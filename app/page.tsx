@@ -25,8 +25,8 @@ const projects = [
     description:
       'I supported an accessibility-first social platform helping disabled people build meaningful friendships and relationships.',
     details: [
-      'Designed the model behind its first £1K in revenue',
-      'Built a marketing strategy that grew social following 300%',
+      'Supported strategy, growth and narrative development',
+      'Worked across an accessibility-first social platform',
       'Returned to sharpen the 2026 Zero Project pitch',
     ],
     outcome: 'Strategy, growth & narrative',
@@ -83,6 +83,16 @@ const experiments = [
   },
   {
     number: '02',
+    name: 'Atomic Goals',
+    status: '50+ users in 2 days',
+    description:
+      'A website that builds an actionable roadmap for your goals using habits and tasks. It reached 50+ users in the first two days after release.',
+    detail: 'Built with Base44',
+    action: 'Open Atomic Goals',
+    href: 'https://atomicgoals.base44.app',
+  },
+  {
+    number: '03',
     name: '75 Day Hard',
     status: 'First vibe-coded app',
     description: 'My first vibe-coded app, built with Base44.',
@@ -102,8 +112,8 @@ const experience = [
   {
     period: '2025 to 2026',
     organisation: 'Warwick Consulting Society',
-    role: 'President',
-    note: 'Led a 1,000+ member society, secured £10K in sponsorship, and delivered the London Consulting Summit at The Shard.',
+    role: 'President · Largest consulting society in EMEA',
+    note: 'Led a community with 6,000+ Instagram followers and 1,000+ active members, securing £20,000 in sponsorships. Organised a Startup Pitch Competition at The Shard with Warwick Kickstart, with £500,000 in funding raised.',
   },
   {
     period: '2024 to 2026',
@@ -121,7 +131,7 @@ const experience = [
     period: '2024',
     organisation: 'Voiz Academy',
     role: 'Summer Associate',
-    note: 'Built a climate internship network and researched partnerships across startups, NGOs, and student communities.',
+    note: 'Built a lead generation model that produced a database of 100+ climate mentors.',
   },
 ];
 
@@ -402,7 +412,7 @@ export default function Home() {
               Book a call ↗
             </a>
             <a
-              href="https://www.linkedin.com/in/abhishek-majumdar"
+              href="https://www.linkedin.com/in/abhishek-majumdar-5964a228a"
               target="_blank"
               rel="noreferrer"
             >
