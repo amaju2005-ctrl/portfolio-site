@@ -1,11 +1,13 @@
+import Image from 'next/image';
+
 const projects = [
   {
     number: '01',
     name: 'HomePlate',
     type: 'Founder · Consumer marketplace',
-    year: '2025—Now',
+    year: '2025 to now',
     description:
-      'A community marketplace built around a simple belief: home-cooked food should come with a person, a story, and a reason to return.',
+      'I am exploring whether home-cooked food can feel more personal, trustworthy, and worth returning to when the person behind it is part of the experience.',
     details: [
       '100+ customer and home-cook interviews',
       '50+ early sign-ups',
@@ -21,7 +23,7 @@ const projects = [
     type: 'Founder’s Associate · Social impact',
     year: '2024 / 2026',
     description:
-      'Supporting an accessibility-first social platform that helps disabled people build meaningful friendships and relationships.',
+      'I supported an accessibility-first social platform helping disabled people build meaningful friendships and relationships.',
     details: [
       'Designed the model behind its first £1K in revenue',
       'Built a marketing strategy that grew social following 300%',
@@ -37,7 +39,7 @@ const projects = [
     type: 'Independent research · Consulting',
     year: 'Ongoing',
     description:
-      'Studying how founders build conviction and how investors make decisions—through company analysis, market maps, founder briefs, and direct conversations.',
+      'I study how founders build conviction and how investors make decisions through company analysis, market maps, founder briefs, and direct conversations.',
     details: [
       '10 projects led for VC-backed businesses at Headstart Global',
       'Research across food, AI, climate, deeptech and venture',
@@ -52,18 +54,41 @@ const projects = [
     number: '04',
     name: 'Writing in public',
     type: 'Newsletter · Podcast in development',
-    year: '2026—Now',
+    year: '2026 to now',
     description:
-      'Using writing and interviews to understand how ambitious businesses get built—and what it feels like to try before the outcome is obvious.',
+      'I use writing and interviews to understand how ambitious businesses get built, and what it feels like to try before the outcome is obvious.',
     details: [
       'Published the first essay, “The Potential Paradox”',
       'Building a founder-and-investor interview format',
       'Writing at the intersection of business and honest curiosity',
     ],
     outcome: 'Learning where people can see it',
-    action: 'Ask what’s next',
+    action: 'Join the conversation',
     color: 'project-dark',
     longTitle: true,
+    href: 'https://calendar.app.google/s9nLFUV84N37rw9n9',
+  },
+];
+
+const experiments = [
+  {
+    number: '01',
+    name: 'Nutrition Logger',
+    status: 'Prototype stage',
+    description:
+      'A personal nutrition logging tool I built for my own use. It is still at the prototype stage.',
+    detail: 'Personal tool',
+    action: 'Open the prototype',
+    href: 'https://nutrition-logger-9gzaaj3vg-amaju2005-ctrls-projects.vercel.app/',
+  },
+  {
+    number: '02',
+    name: '75 Day Hard',
+    status: 'First vibe-coded app',
+    description: 'My first vibe-coded app, built with Base44.',
+    detail: 'Built with Base44',
+    action: 'Open the app',
+    href: 'https://75dayhard.base44.app/login?from_url=https%3A%2F%2F75dayhard.base44.app%2F',
   },
 ];
 
@@ -75,13 +100,13 @@ const experience = [
     note: 'Beginning the next chapter in Manchester after a 2025 Finance Transformation internship.',
   },
   {
-    period: '2025—26',
+    period: '2025 to 2026',
     organisation: 'Warwick Consulting Society',
     role: 'President',
     note: 'Led a 1,000+ member society, secured £10K in sponsorship, and delivered the London Consulting Summit at The Shard.',
   },
   {
-    period: '2024—26',
+    period: '2024 to 2026',
     organisation: 'Headstart Global',
     role: 'Project Director',
     note: 'Led 10 client projects for VC-backed businesses while managing teams of four student consultants.',
@@ -117,35 +142,40 @@ export default function Home() {
           AM<span className="wordmark-dot">•</span>
         </a>
         <p className="nav-note">
-          Startup builder &amp;
+          Founder in progress
           <br />
-          venture-curious operator
+          learning in public
         </p>
         <div className="nav-links">
           <a href="#work">Work</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </div>
-        <a className="availability" href="mailto:amaju2005@gmail.com">
-          <span aria-hidden="true" /> Open to thoughtful conversations
+        <a
+          className="availability"
+          href="https://calendar.app.google/s9nLFUV84N37rw9n9"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span aria-hidden="true" /> Book a conversation
         </a>
       </nav>
 
       <header className="hero page-shell" id="top">
         <p className="eyebrow">Building · Researching · Writing</p>
         <h1>
-          I&apos;m learning how
+          I&apos;m trying to understand how
           <span className="hero-line">
-            <em>great businesses</em>
+            <em>interesting businesses</em>
           </span>
           get built.
         </h1>
 
         <div className="hero-bottom">
           <p className="hero-intro">
-            I&apos;m Abhishek—an Economics graduate, early-stage founder and
-            researcher interested in startups, venture capital, social impact,
-            and the stories behind what gets built.
+            I&apos;m Abhishek. I build, research, and write about startups because
+            I would rather learn from being in the arena than comment from the
+            sidelines.
           </p>
           <a className="round-link" href="#work" aria-label="See selected work">
             <span>See work</span>
@@ -161,11 +191,11 @@ export default function Home() {
 
       <section className="work-section page-shell" id="work">
         <div className="section-heading">
-          <p className="section-index">(01) — Selected work</p>
+          <p className="section-index">(01) / Selected work</p>
           <h2>
-            Things I&apos;ve built,
+            The ideas I&apos;m building,
             <br />
-            shaped, and learned from.
+            and the work teaching me how.
           </h2>
         </div>
 
@@ -193,7 +223,12 @@ export default function Home() {
               <div className="project-footer">
                 <span>{project.outcome}</span>
                 <a
-                  href={`mailto:amaju2005@gmail.com?subject=${encodeURIComponent(project.name)}`}
+                  href={
+                    project.href ??
+                    `mailto:amaju2005@gmail.com?subject=${encodeURIComponent(project.name)}`
+                  }
+                  target={project.href ? '_blank' : undefined}
+                  rel={project.href ? 'noreferrer' : undefined}
                 >
                   {project.action} <span aria-hidden="true">↗</span>
                 </a>
@@ -203,14 +238,49 @@ export default function Home() {
         </div>
       </section>
 
+      <section
+        className="experiments-section page-shell"
+        id="experiments"
+        aria-labelledby="experiments-title"
+      >
+        <div className="experiments-heading">
+          <p className="section-index">(02) / Personal experiments</p>
+          <div>
+            <h2 id="experiments-title">Small tools. Real use. Early lessons.</h2>
+            <p>
+              I like building before I have every answer. These are personal
+              experiments, shared honestly at the stage they are in.
+            </p>
+          </div>
+        </div>
+        <div className="experiments-grid">
+          {experiments.map((experiment) => (
+            <article className="experiment-card" key={experiment.name}>
+              <div className="experiment-meta">
+                <span>{experiment.number}</span>
+                <span>{experiment.status}</span>
+              </div>
+              <div className="experiment-copy">
+                <p>{experiment.detail}</p>
+                <h3>{experiment.name}</h3>
+                <p>{experiment.description}</p>
+              </div>
+              <a href={experiment.href} target="_blank" rel="noreferrer">
+                {experiment.action} <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="about-section page-shell" id="about">
         <div className="about-lead">
-          <p className="section-index">(02) — About</p>
-          <p className="about-kicker">Curious enough to ask. Impatient enough to build.</p>
+          <p className="section-index">(03) / About</p>
+          <p className="about-kicker">Curious enough to ask. Restless enough to build.</p>
         </div>
         <div className="about-copy">
           <h2>
-            I&apos;m drawn to people with the conviction to build something—and
+            I&apos;m drawn to people with the conviction to build something, and
             the judgement to ask whether it <em>should exist.</em>
           </h2>
           <div className="about-columns">
@@ -222,9 +292,9 @@ export default function Home() {
               its right to win, and why people care enough to come back.
             </p>
             <p>
-              Long term, I want to build and own meaningful businesses—most
-              likely somewhere around food, hospitality, or sport. Right now I&apos;m
-              collecting the skills, relationships, and judgement to do that
+              Long term, I want to build and own meaningful businesses, most
+              likely somewhere around food, hospitality, or sport. Right now I
+              am collecting the skills, relationships, and judgement to do that
               well, while sharing the honest version of what I learn.
             </p>
           </div>
@@ -232,9 +302,12 @@ export default function Home() {
       </section>
 
       <figure className="poster-section page-shell">
-        <img
+        <Image
           src="/og.png"
           alt="Editorial profile poster for Abhishek Majumdar."
+          width={1733}
+          height={908}
+          sizes="(max-width: 1488px) calc(100vw - 48px), 1440px"
         />
         <figcaption>
           <span>Profile poster</span>
@@ -244,7 +317,7 @@ export default function Home() {
 
       <section className="experience-section page-shell" aria-labelledby="experience-title">
         <div className="experience-heading">
-          <p className="section-index">(03) — Selected experience</p>
+          <p className="section-index">(04) / Selected experience</p>
           <h2 id="experience-title">Learning across companies, communities, and stages.</h2>
         </div>
         <div className="experience-list">
@@ -263,7 +336,7 @@ export default function Home() {
 
       <section className="capabilities-section page-shell" aria-labelledby="capabilities-title">
         <div>
-          <p className="section-index">(04) — How I work</p>
+          <p className="section-index">(05) / How I work</p>
           <h2 id="capabilities-title">Turning curiosity into useful evidence.</h2>
         </div>
         <ol className="capabilities-list">
@@ -278,23 +351,23 @@ export default function Home() {
       </section>
 
       <section className="personal-section page-shell">
-        <p className="section-index">(05) — Currently</p>
+        <p className="section-index">(06) / Currently</p>
         <div className="personal-grid">
-          <h2>A live index of what I&apos;m trying to understand.</h2>
+          <h2>What I&apos;m trying to understand right now.</h2>
           <div className="index-card">
             <span>Building</span>
             <p>What makes someone order from the same home cook twice?</p>
             <small>HomePlate · Customer discovery</small>
           </div>
           <div className="index-card index-card-dark">
-            <span>Writing & recording</span>
+            <span>Talking and writing</span>
             <p>How do founders and investors form conviction?</p>
-            <small>Newsletter + interview series</small>
+            <small>Newsletter + podcast in development</small>
           </div>
           <div className="index-card index-card-outline">
-            <span>Learning</span>
-            <p>AI, food economics, venture, and the craft of clear thinking.</p>
-            <small>One question at a time</small>
+            <span>Testing</span>
+            <p>How much can a small personal tool teach me?</p>
+            <small>Prototypes + vibe-coded experiments</small>
           </div>
           <div className="index-card index-card-coral">
             <span>Beyond work</span>
@@ -306,16 +379,28 @@ export default function Home() {
 
       <footer className="site-footer page-shell" id="contact">
         <div className="footer-top">
-          <p className="section-index">(06) — Contact</p>
-          <p>Founders, investors, operators, curious people—say hello.</p>
+          <p className="section-index">(07) / Contact</p>
+          <p>Founder conversations and podcast appearances are welcome.</p>
         </div>
-        <a className="footer-email" href="mailto:amaju2005@gmail.com">
-          Start a conversation.
+        <a
+          className="footer-email"
+          href="https://calendar.app.google/s9nLFUV84N37rw9n9"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Let&apos;s have a conversation.
           <span aria-hidden="true">↗</span>
         </a>
         <div className="footer-bottom">
           <p>Abhishek Majumdar</p>
           <div>
+            <a
+              href="https://calendar.app.google/s9nLFUV84N37rw9n9"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Book a call ↗
+            </a>
             <a
               href="https://www.linkedin.com/in/abhishek-majumdar"
               target="_blank"
@@ -328,9 +413,6 @@ export default function Home() {
           <p>UK · India</p>
           <a href="#top">Back to top ↑</a>
         </div>
-        <p className="link-note">
-          Newsletter and podcast links will be added when their final public URLs are confirmed.
-        </p>
       </footer>
     </main>
   );
