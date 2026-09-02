@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   ),
   title: 'Abhishek Majumdar | Startups, Venture & Storytelling',
   description:
-    'Abhishek Majumdar builds, researches, and writes about startups, venture capital, social impact, and the stories behind what gets built.',
+    'Abhishek Majumdar is a Finance Transformation Analyst at Deloitte who builds, researches, and writes about startups, venture capital, social impact, and storytelling.',
   openGraph: {
     title: 'Abhishek Majumdar | Startups, Venture & Storytelling',
     description:

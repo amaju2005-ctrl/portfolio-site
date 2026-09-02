@@ -63,10 +63,10 @@ const projects = [
       'Writing at the intersection of business and honest curiosity',
     ],
     outcome: 'Learning where people can see it',
-    action: 'Join the conversation',
+    action: 'Read the Substack',
     color: 'project-dark',
     longTitle: true,
-    href: 'https://calendar.app.google/s9nLFUV84N37rw9n9',
+    href: 'https://substack.com/@abhishekmaju',
   },
 ];
 
@@ -93,12 +93,13 @@ const experiments = [
   },
   {
     number: '03',
-    name: '75 Day Hard',
-    status: 'First vibe-coded app',
-    description: 'My first vibe-coded app, built with Base44.',
-    detail: 'Built with Base44',
-    action: 'Open the app',
-    href: 'https://75dayhard.base44.app/login?from_url=https%3A%2F%2F75dayhard.base44.app%2F',
+    name: 'Twenty',
+    status: 'Prototype · Currently developing',
+    description:
+      'A trust-first career relationship engine I am currently developing. Twenty turns a person’s experience and ambition into a shortlist of 20 people worth speaking to, then helps them draft thoughtful outreach they review before anything is sent. It is designed to replace a fragmented cold-outreach workflow across search, research, contact checks, writing, and follow-ups.',
+    detail: 'Career relationship tool',
+    action: 'Explore the prototype',
+    href: 'https://twenty-gamma-ten.vercel.app/',
   },
 ];
 
@@ -106,8 +107,8 @@ const experience = [
   {
     period: '2026',
     organisation: 'Deloitte',
-    role: 'Technology & Transformation graduate programme',
-    note: 'Beginning the next chapter in Manchester after a 2025 Finance Transformation internship.',
+    role: 'Finance Transformation Analyst',
+    note: 'Working in Manchester after a 2025 Finance Transformation internship.',
   },
   {
     period: '2025 to 2026',
@@ -183,9 +184,9 @@ export default function Home() {
 
         <div className="hero-bottom">
           <p className="hero-intro">
-            I&apos;m Abhishek. I build, research, and write about startups because
-            I would rather learn from being in the arena than comment from the
-            sidelines.
+            I&apos;m Abhishek, a Finance Transformation Analyst at Deloitte. I
+            build, research, and write about startups because I would rather
+            learn from being in the arena than comment from the sidelines.
           </p>
           <a className="round-link" href="#work" aria-label="See selected work">
             <span>See work</span>
@@ -417,6 +418,13 @@ export default function Home() {
               rel="noreferrer"
             >
               LinkedIn ↗
+            </a>
+            <a
+              href="https://substack.com/@abhishekmaju"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Substack ↗
             </a>
             <a href="mailto:amaju2005@gmail.com">Email ↗</a>
           </div>

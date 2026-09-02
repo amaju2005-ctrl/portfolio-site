@@ -51,5 +51,6 @@ Future pushes to the connected production branch will deploy automatically. Othe
 
 - [Book a founder conversation or podcast appearance](https://calendar.app.google/s9nLFUV84N37rw9n9)
 - [Nutrition Logger prototype](https://nutrition-logger-9gzaaj3vg-amaju2005-ctrls-projects.vercel.app/)
-- [75 Day Hard, built with Base44](https://75dayhard.base44.app/login?from_url=https%3A%2F%2F75dayhard.base44.app%2F)
+- [Twenty prototype](https://twenty-gamma-ten.vercel.app/)
 - [Atomic Goals, built with Base44](https://atomicgoals.base44.app)
+- [Substack](https://substack.com/@abhishekmaju)
