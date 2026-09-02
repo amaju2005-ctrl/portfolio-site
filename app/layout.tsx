@@ -13,28 +13,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Abhishek Majumdar — Designer & Creative Technologist',
+  metadataBase: new URL(
+    'https://abhishek-majumdar-portfolio.amaju2005.chatgpt.site',
+  ),
+  title: 'Abhishek Majumdar — Startups, Venture & Storytelling',
   description:
-    'A multidisciplinary portfolio spanning product thinking, creative direction, interface design, and front-end development.',
+    'The portfolio of Abhishek Majumdar: early-stage founder, startup researcher and storyteller exploring how ambitious businesses get built.',
   openGraph: {
-    title: 'Abhishek Majumdar — Designer & Creative Technologist',
+    title: 'Abhishek Majumdar — Startups, Venture & Storytelling',
     description:
-      'I shape ideas into useful, memorable digital experiences.',
+      'Learning how great businesses get built through founder experiments, venture research, social-impact work and storytelling.',
     type: 'website',
     images: [
       {
         url: '/og.png',
-        width: 1731,
-        height: 909,
-        alt: 'Abhishek Majumdar — I shape ideas into useful, memorable digital experiences.',
+        width: 1733,
+        height: 908,
+        alt: 'Abhishek Majumdar — learning how great businesses get built.',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Abhishek Majumdar — Designer & Creative Technologist',
+    title: 'Abhishek Majumdar — Startups, Venture & Storytelling',
     description:
-      'I shape ideas into useful, memorable digital experiences.',
+      'Learning how great businesses get built through founder experiments, venture research, social-impact work and storytelling.',
     images: ['/og.png'],
   },
 };
