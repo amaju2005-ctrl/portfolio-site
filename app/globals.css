@@ -3,7 +3,7 @@
   --paper: #f3f0e8;
   --lime: #c7f464;
   --coral: #ff745c;
-  --blue: #84aaf5;
+  --sun: #efcf78;
   --line: rgba(20, 20, 20, 0.24);
   --serif: Iowan Old Style, Baskerville, Times New Roman, serif;
   --sans: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -344,8 +344,8 @@ a {
   background: var(--coral);
 }
 
-.project-blue {
-  background: var(--blue);
+.project-sun {
+  background: var(--sun);
 }
 
 .project-dark {
@@ -498,15 +498,16 @@ a {
 }
 
 .experiment-card:nth-child(2) {
-  background: var(--blue);
+  background: var(--lime);
 }
 
 .experiment-card:hover {
   transform: translateY(-5px);
 }
 
-.experiment-card:first-child:hover {
-  background: var(--lime);
+.experiment-card:first-child:hover,
+.experiment-card:nth-child(3):hover {
+  background: var(--sun);
 }
 
 .experiment-meta {

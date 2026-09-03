@@ -25,9 +25,10 @@ const projects = [
     description:
       'I supported an accessibility-first social platform helping disabled people build meaningful friendships and relationships.',
     details: [
-      'Supported strategy, growth and narrative development',
-      'Worked across an accessibility-first social platform',
-      'Returned to sharpen the 2026 Zero Project pitch',
+      'Helped develop the commercial model that generated its first £1,000 in grants',
+      'Grew its social-media following by 300%',
+      'Built the 2026 Tech Forum investment pitch in Mumbai for an ₹8 lakh funding ask',
+      'Incorporated accessibility features based on user feedback',
     ],
     outcome: 'Strategy, growth & narrative',
     action: 'Ask about the work',
@@ -43,11 +44,11 @@ const projects = [
     details: [
       '10 projects led for VC-backed businesses at Headstart Global',
       'Research across food, AI, climate, deeptech and venture',
-      'A growing series of founder and investor conversations',
+      '9 personalised conversations generated 4 accepted meeting bookings',
     ],
     outcome: 'Evidence before opinion',
     action: 'Compare notes',
-    color: 'project-blue',
+    color: 'project-sun',
     longTitle: true,
   },
   {
@@ -60,7 +61,8 @@ const projects = [
     details: [
       'Published the first essay, “The Potential Paradox”',
       'Building a founder-and-investor interview format',
-      'Writing at the intersection of business and honest curiosity',
+      '722 Substack views in the first year',
+      'Grew the Substack from its first subscriber to 10',
     ],
     outcome: 'Learning where people can see it',
     action: 'Read the Substack',
@@ -76,7 +78,7 @@ const experiments = [
     name: 'Nutrition Logger',
     status: 'Prototype stage',
     description:
-      'A personal nutrition logging tool I built for my own use. It is still at the prototype stage.',
+      'A personal tool for tracking calories and protein, quickly adding meals, reviewing daily history, and exporting data. It is still at the prototype stage.',
     detail: 'Personal tool',
     action: 'Open the prototype',
     href: 'https://nutrition-logger-9gzaaj3vg-amaju2005-ctrls-projects.vercel.app/',
@@ -86,7 +88,7 @@ const experiments = [
     name: 'Atomic Goals',
     status: '50+ users in 2 days',
     description:
-      'A website that builds an actionable roadmap for your goals using habits and tasks. It reached 50+ users in the first two days after release.',
+      'A goal-planning platform that turns ambitions into actionable phases, habits, and tasks. It reached 50+ users in the first two days after release.',
     detail: 'Built with Base44',
     action: 'Open Atomic Goals',
     href: 'https://atomicgoals.base44.app',
@@ -108,31 +110,37 @@ const experience = [
     period: '2026',
     organisation: 'Deloitte',
     role: 'Finance Transformation Analyst',
-    note: 'Working in Manchester after a 2025 Finance Transformation internship.',
+    note: 'Joined the Technology & Transformation practice in Manchester after a 2025 Finance Transformation internship.',
   },
   {
     period: '2025 to 2026',
     organisation: 'Warwick Consulting Society',
-    role: 'President · Largest consulting society in EMEA',
-    note: 'Led a community with 6,000+ Instagram followers and 1,000+ active members, securing £20,000 in sponsorships. Organised a Startup Pitch Competition at The Shard with Warwick Kickstart, with £500,000 in funding raised.',
+    role: 'President · Largest student consulting society in EMEA',
+    note: 'Led 1,000+ active members and an audience of 10,000+ social-media followers, securing £20,000 in sponsorships. Delivered the London Consulting Summit at The Shard for 140+ attendees with 15+ industry experts, 100% attendee satisfaction, and a 98% recommendation rate.',
+  },
+  {
+    period: 'Leadership',
+    organisation: 'Warwick Kickstart',
+    role: 'Startup Pitch Competition organiser',
+    note: 'Organised the Startup Pitch Competition at The Shard, connected to £500,000 in funding raised by participating startups. Increased applications fivefold to 500 and secured 10 major employers, including Jaguar Land Rover, IBM, and EY.',
   },
   {
     period: '2024 to 2026',
     organisation: 'Headstart Global',
     role: 'Project Director',
-    note: 'Led 10 client projects for VC-backed businesses while managing teams of four student consultants.',
+    note: 'Led 10 consulting projects for venture-backed businesses, managed four-person teams, delivered every project on time, and achieved 100% client retention.',
   },
   {
     period: '2025',
     organisation: 'Rival Technologies',
     role: 'Growth & Development Intern',
-    note: 'Worked on early adoption, partnerships, and product learning for a spatial-computing startup.',
+    note: 'Sourced and evaluated 12+ strategic partnerships across content creators, headset manufacturers, and developer communities.',
   },
   {
     period: '2024',
     organisation: 'Voiz Academy',
     role: 'Summer Associate',
-    note: 'Built a lead generation model that produced a database of 100+ climate mentors.',
+    note: 'Built a lead-generation database of 100+ climate professionals, researched and pitched 10 partnership opportunities, and contributed to a 50% improvement in satisfaction and retention.',
   },
 ];
 
@@ -296,8 +304,8 @@ export default function Home() {
           </h2>
           <div className="about-columns">
             <p>
-              I studied Economics at Warwick after growing up in Mumbai. Since
-              then, I&apos;ve moved between early-stage startups, consulting,
+              I graduated with a 2:1 in Economics from Warwick after growing up
+              in Mumbai. Since then, I&apos;ve moved between early-stage startups, consulting,
               community leadership, and my own experiments. I like messy
               questions: what makes a marketplace work, where a business earns
               its right to win, and why people care enough to come back.
@@ -368,22 +376,22 @@ export default function Home() {
           <div className="index-card">
             <span>Building</span>
             <p>What makes someone order from the same home cook twice?</p>
-            <small>HomePlate · Customer discovery</small>
+            <small>HomePlate · 100+ customer and home-cook interviews</small>
           </div>
           <div className="index-card index-card-dark">
             <span>Talking and writing</span>
             <p>How do founders and investors form conviction?</p>
-            <small>Newsletter + podcast in development</small>
+            <small>Substack · 722 views in year one</small>
           </div>
           <div className="index-card index-card-outline">
             <span>Testing</span>
             <p>How much can a small personal tool teach me?</p>
-            <small>Prototypes + vibe-coded experiments</small>
+            <small>Atomic Goals · Twenty · Nutrition Logger</small>
           </div>
           <div className="index-card index-card-coral">
             <span>Beyond work</span>
             <p>Training for a half marathon, drumming, and finding great food.</p>
-            <small>London · Mumbai · wherever next</small>
+            <small>Trinity Grade 4 drums · London · Mumbai</small>
           </div>
         </div>
       </section>
